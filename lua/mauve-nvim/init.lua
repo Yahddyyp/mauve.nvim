@@ -104,6 +104,8 @@ function M.setup()
             if vim.g.colors_name == "mauve" then
                 apply()
                 pcall(vim.cmd, "LualineRefresh")
+            else
+                pcall(vim.cmd, "LualineRefresh")
             end
         end,
         desc = "Mauve colourscheme highlights",
