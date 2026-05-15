@@ -101,12 +101,7 @@ function M.setup()
     vim.api.nvim_create_autocmd("ColorScheme", {
         group = "MauveHighlights",
         callback = function()
-            if vim.g.colors_name == "mauve" then
-                apply()
-                pcall(vim.cmd, "LualineRefresh")
-            else
-                pcall(vim.cmd, "LualineRefresh")
-            end
+            if vim.g.colors_name == "mauve" then apply() end
         end,
         desc = "Mauve colourscheme highlights",
     })
