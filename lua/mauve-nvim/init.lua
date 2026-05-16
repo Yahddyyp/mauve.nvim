@@ -22,7 +22,7 @@ local colours = {
 	mantle = "#181825",
 }
 
-local integrations = { "telescope", "ui", "dashboard", "blinkcmp" }
+local integrations = { "telescope", "ui", "dashboard", "blinkcmp", "fidget" }
 
 local function apply()
 	local highlights = {
@@ -35,6 +35,11 @@ local function apply()
 		CursorLineNr = { fg = colours.mauve, bold = true },
 		StatusLine = { fg = colours.fg, bg = colours.bg, bold = true },
 		Visual = { bg = colours.grey, bold = true },
+		-- Search
+		Terminal = { fg = colours.sapphire },
+		Search = { fg = colours.bg, bg = colours.green },
+		IncSearch = { fg = colours.bg, bg = colours.mauve },
+		CurSearch = { fg = colours.bg, bg = colours.red },
 		-- LSP diagnostics
 		DiagnosticError = { fg = colours.red },
 		DiagnosticWarn = { fg = colours.peach },
@@ -57,8 +62,12 @@ local function apply()
 		SnacksNotifyIconInfo = { fg = colours.blue },
 		SnacksNotifyIconWarn = { fg = colours.peach },
 		SnacksNotifyIconError = { fg = colours.red },
-
-		-- The individual diagnostic message text inside the card
+		SnacksNotifierInfo = { fg = colours.subtext, bg = colours.mantle },
+		SnacksNotifierBorderInfo = { fg = colours.surface0, bg = colours.mantle },
+		SnacksNotifierMsgInfo = { fg = colours.subtext },
+		SnacksNotifierTitleInfo = { fg = colours.mauve, bold = true },
+		SnacksNotifierIconInfo = { fg = colours.blue },
+		SnacksClassInfo = { fg = colours.subtext },
 		SnacksNotifyMsgInfo = { fg = colours.subtext },
 		-- Tree sitter support
 		["@variable"] = { fg = colours.sapphire },
@@ -102,6 +111,18 @@ local function apply()
 		["@markup.heading.4"] = { fg = colours.green, bold = true },
 		["@markup.heading.5"] = { fg = colours.red, bold = true },
 		["@markup.heading.6"] = { fg = colours.subtext, bold = true },
+		-- Noice.nvim
+		NoiceLspProgressClient = { fg = colours.mauve, bold = true },
+		NoiceLspProgressSpinner = { fg = colours.blue },
+		NoiceLspProgressTitle = { fg = colours.subtext },
+		NoiceFormatProgressDone = { fg = colours.bg, bg = colours.mauve },
+		NoiceFormatProgressTodo = { fg = colours.overlay0, bg = colours.surface0 },
+		-- Fidget
+		FidgetTask = { fg = colours.subtext, bg = "NONE" },
+		FidgetTitle = { fg = colours.mauve, bg = "NONE", bold = true },
+		FidgetSpinner = { fg = colours.blue, bg = "NONE" },
+		FidgetBorder = { fg = colours.surface0, bg = colours.mantle },
+		FidgetGroup = { fg = colours.overlay2, bg = "NONE" },
 		-- Git
 		DiffAdd = { fg = colours.green },
 		DiffChange = { fg = colours.sapphire },
@@ -110,6 +131,10 @@ local function apply()
 		GitSignsAdd = { fg = colours.green },
 		GitSignsChange = { fg = colours.sapphire },
 		GitSignsDelete = { fg = colours.red },
+		FloatBorder = { fg = colours.mauve }, -- Inactive Lazygit panels
+		MatchParen = { fg = colours.sapphire, bold = true }, -- Active/Focused Lazygit panel
+		Identifier = { fg = colours.grey }, -- Cherry-picked commits
+		Special = { fg = colours.mauve },
 	}
 	for group, opts in pairs(highlights) do
 		vim.api.nvim_set_hl(0, group, opts)
