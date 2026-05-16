@@ -57,23 +57,15 @@ local function apply()
 		SnacksNotifierInfo = { fg = colours.fg, bg = colours.mantle },
 		SnacksNotifierWarn = { fg = colours.fg, bg = colours.mantle },
 		SnacksNotifierError = { fg = colours.fg, bg = colours.mantle },
-
-		-- Make the borders pop according to their level
 		SnacksNotifierBorderInfo = { fg = colours.mauve, bg = colours.mantle },
 		SnacksNotifierBorderWarn = { fg = colours.peach, bg = colours.mantle },
 		SnacksNotifierBorderError = { fg = colours.red, bg = colours.mantle },
-
-		-- Icons
 		SnacksNotifierIconInfo = { fg = colours.mauve },
 		SnacksNotifierIconWarn = { fg = colours.peach },
 		SnacksNotifierIconError = { fg = colours.red },
-
-		-- Titles
 		SnacksNotifierTitleInfo = { fg = colours.mauve, bold = true },
 		SnacksNotifierTitleWarn = { fg = colours.peach, bold = true },
 		SnacksNotifierTitleError = { fg = colours.red, bold = true },
-
-		-- Fix the message text so it isn't random colors like yellow
 		SnacksNotifierMsgInfo = { fg = colours.fg },
 		SnacksNotifierMsgWarn = { fg = colours.fg },
 		SnacksNotifierMsgError = { fg = colours.fg },
