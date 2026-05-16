@@ -54,21 +54,29 @@ local function apply()
 		DiagnosticVirtualTextInfo = { fg = colours.blue, bg = colours.mantle },
 		DiagnosticVirtualTextHint = { fg = colours.teal, bg = colours.mantle },
 		-- Snacks Notify
-		SnacksNormal = { fg = colours.fg, bg = colours.mantle },
-		SnacksBorder = { fg = colours.surface0, bg = colours.mantle },
-		SnacksNotifyTitleInfo = { fg = colours.mauve, bold = true },
-		SnacksNotifyTitleWarn = { fg = colours.peach, bold = true },
-		SnacksNotifyTitleError = { fg = colours.red, bold = true },
-		SnacksNotifyIconInfo = { fg = colours.blue },
-		SnacksNotifyIconWarn = { fg = colours.peach },
-		SnacksNotifyIconError = { fg = colours.red },
-		SnacksNotifierInfo = { fg = colours.subtext, bg = colours.mantle },
-		SnacksNotifierBorderInfo = { fg = colours.surface0, bg = colours.mantle },
-		SnacksNotifierMsgInfo = { fg = colours.subtext },
+		SnacksNotifierInfo = { fg = colours.fg, bg = colours.mantle },
+		SnacksNotifierWarn = { fg = colours.fg, bg = colours.mantle },
+		SnacksNotifierError = { fg = colours.fg, bg = colours.mantle },
+
+		-- Make the borders pop according to their level
+		SnacksNotifierBorderInfo = { fg = colours.mauve, bg = colours.mantle },
+		SnacksNotifierBorderWarn = { fg = colours.peach, bg = colours.mantle },
+		SnacksNotifierBorderError = { fg = colours.red, bg = colours.mantle },
+
+		-- Icons
+		SnacksNotifierIconInfo = { fg = colours.mauve },
+		SnacksNotifierIconWarn = { fg = colours.peach },
+		SnacksNotifierIconError = { fg = colours.red },
+
+		-- Titles
 		SnacksNotifierTitleInfo = { fg = colours.mauve, bold = true },
-		SnacksNotifierIconInfo = { fg = colours.blue },
-		SnacksClassInfo = { fg = colours.subtext },
-		SnacksNotifyMsgInfo = { fg = colours.subtext },
+		SnacksNotifierTitleWarn = { fg = colours.peach, bold = true },
+		SnacksNotifierTitleError = { fg = colours.red, bold = true },
+
+		-- Fix the message text so it isn't random colors like yellow
+		SnacksNotifierMsgInfo = { fg = colours.fg },
+		SnacksNotifierMsgWarn = { fg = colours.fg },
+		SnacksNotifierMsgError = { fg = colours.fg },
 		-- Tree sitter support
 		["@variable"] = { fg = colours.sapphire },
 		["@Keyword"] = { fg = colours.mauve },
