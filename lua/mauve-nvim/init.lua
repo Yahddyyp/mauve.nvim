@@ -117,12 +117,6 @@ local function apply()
 		NoiceLspProgressTitle = { fg = colours.subtext },
 		NoiceFormatProgressDone = { fg = colours.bg, bg = colours.mauve },
 		NoiceFormatProgressTodo = { fg = colours.overlay0, bg = colours.surface0 },
-		-- Fidget
-		FidgetTask = { fg = colours.subtext, bg = "NONE" },
-		FidgetTitle = { fg = colours.mauve, bg = "NONE", bold = true },
-		FidgetSpinner = { fg = colours.blue, bg = "NONE" },
-		FidgetBorder = { fg = colours.surface0, bg = colours.mantle },
-		FidgetGroup = { fg = colours.overlay2, bg = "NONE" },
 		-- Git
 		DiffAdd = { fg = colours.green },
 		DiffChange = { fg = colours.sapphire },
@@ -131,9 +125,9 @@ local function apply()
 		GitSignsAdd = { fg = colours.green },
 		GitSignsChange = { fg = colours.sapphire },
 		GitSignsDelete = { fg = colours.red },
-		FloatBorder = { fg = colours.mauve }, -- Inactive Lazygit panels
-		MatchParen = { fg = colours.sapphire, bold = true }, -- Active/Focused Lazygit panel
-		Identifier = { fg = colours.grey }, -- Cherry-picked commits
+		FloatBorder = { fg = colours.mauve },
+		MatchParen = { fg = colours.sapphire, bold = true },
+		Identifier = { fg = colours.grey },
 		Special = { fg = colours.mauve },
 	}
 	for group, opts in pairs(highlights) do
