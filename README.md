@@ -51,7 +51,6 @@ This will apply the colorscheme every time you start Neovim.
 ## Supported Plugins
 
 *   [Telescope](https://github.com/nvim-telescope/telescope.nvim)
-*   [Dashboard](https://github.com/glepnir/dashboard-nvim)
 *   [BlinkCmp](https://github.com/uga-rosa/blink.nvim)
 *   [Fidget](https://github.com/j-hui/fidget.nvim)
 *   [Snacks](https://github.com/sontungexpt/snacks.nvim)
