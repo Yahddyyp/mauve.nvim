@@ -4,7 +4,7 @@
 
 A dark and colourful theme for neovim with the catppuccin mocha colorscheme.
 
-##  Installation
+## Installation
 
 Install with your favorite plugin manager:
 
@@ -50,16 +50,15 @@ This will apply the colorscheme every time you start Neovim.
 
 ## Supported Plugins
 
-*   Telescope
-*   Neovim UI
-*   Dashboard
-*   BlinkCmp
-*   Fidget
-*   Snacks
-*   Tree-sitter
-*   Noice.nvim
-*   Git Signs
-*   Lualine
+*   [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+*   [Dashboard](https://github.com/glepnir/dashboard-nvim)
+*   [BlinkCmp](https://github.com/uga-rosa/blink.nvim)
+*   [Fidget](https://github.com/j-hui/fidget.nvim)
+*   [Snacks](https://github.com/sontungexpt/snacks.nvim)
+*   [Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
+*   [Noice.nvim](https://github.com/folke/noice.nvim)
+*   [Git Signs](https://github.com/lewis6991/gitsigns.nvim)
+*   [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 
 ## Lualine
 
