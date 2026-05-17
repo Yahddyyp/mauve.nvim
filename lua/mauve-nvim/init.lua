@@ -65,8 +65,7 @@ local function apply()
 		DiagnosticVirtualTextHint = { fg = colours.teal, bg = colours.mantle },
 		FloatBorder = { fg = colours.mauve },
 		MatchParen = { fg = colours.sapphire, bold = true },
-		Identifier = { fg = colours.sapphire },
-		Constant = { fg = colours.mauve },
+		Identifier = { fg = colours.grey },
 		Special = { fg = colours.mauve },
 	}
 	for group, opts in pairs(highlights) do
