@@ -6,4 +6,12 @@ return function(colours)
 	vim.api.nvim_set_hl(0, "GitSignsAdd", { fg = colours.green })
 	vim.api.nvim_set_hl(0, "GitSignsChange", { fg = colours.sapphire })
 	vim.api.nvim_set_hl(0, "GitSignsDelete", { fg = colours.red })
+	-- For git commit message
+	vim.api.nvim_set_hl(0, "gitcommitComment", { fg = colours.subtext, italic = true })
+	vim.api.nvim_set_hl(0, "gitcommitBranch", { fg = colours.mauve })
+	vim.api.nvim_set_hl(0, "gitcommitHeader", { fg = colours.mauve })
+	vim.api.nvim_set_hl(0, "gitcommitFile", { fg = colours.peach })
+	vim.api.nvim_set_hl(0, "diffAdded", { fg = colours.green })
+	vim.api.nvim_set_hl(0, "diffChanged", { fg = colours.sapphire })
+	vim.api.nvim_set_hl(0, "diffRemoved", { fg = colours.red })
 end

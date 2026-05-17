@@ -66,7 +66,8 @@ local function apply()
         FloatBorder = { fg = colours.mauve },
         MatchParen = { fg = colours.sapphire, bold = true },
         Identifier = { fg = colours.grey },
-        Special = { fg = colours.mauve },
+		Special = { fg = colours.mauve },
+		Type = { fg = colours.sapphire },
         envField = { fg = colours.yellow },
     }
     for group, opts in pairs(highlights) do
