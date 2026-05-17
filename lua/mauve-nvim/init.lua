@@ -67,6 +67,7 @@ local function apply()
 		MatchParen = { fg = colours.sapphire, bold = true },
 		Identifier = { fg = colours.grey },
 		Special = { fg = colours.mauve },
+		envField = { fg = colours.yellow },
 	}
 	for group, opts in pairs(highlights) do
 		vim.api.nvim_set_hl(0, group, opts)
