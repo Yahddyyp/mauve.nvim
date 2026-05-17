@@ -1,8 +1,8 @@
-# Mauve.nvim
+# mauve.nvim
 
 ![preview](assets/preview.png)
 
-<p align="center"><b>A dark and colourful theme for neovim with the catppuccin mocha palette.</b></p>
+<p align="center"><b>A dark and colourful theme for neovim with the catppuccin mocha palette for mauve lovers.</b></p>
 
 ## Installation
 
