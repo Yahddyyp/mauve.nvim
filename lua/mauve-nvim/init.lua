@@ -47,9 +47,9 @@ local function apply()
 		Visual = { bg = colours.grey, bold = true },
 		-- Search
 		Terminal = { fg = colours.sapphire },
-		Search = { fg = colours.bg, bg = colours.green },
+		Search = { fg = colours.bg, bg = colours.mauve },
 		IncSearch = { fg = colours.bg, bg = colours.mauve },
-		CurSearch = { fg = colours.bg, bg = colours.red },
+		CurSearch = { fg = colours.bg, bg = colours.sapphire, bold = true },
 		-- LSP diagnostics
 		DiagnosticError = { fg = colours.red },
 		DiagnosticWarn = { fg = colours.peach },
@@ -65,7 +65,7 @@ local function apply()
 		DiagnosticVirtualTextHint = { fg = colours.teal, bg = colours.mantle },
 		FloatBorder = { fg = colours.mauve },
 		MatchParen = { fg = colours.sapphire, bold = true },
-		Identifier = { fg = colours.grey },
+		Identifier = { fg = colours.peach },
 		Special = { fg = colours.mauve },
 		Type = { fg = colours.sapphire },
 		envField = { fg = colours.yellow },
