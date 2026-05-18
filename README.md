@@ -12,12 +12,9 @@ Install with your favorite plugin manager:
 
 ```lua
 {
-  "yahddyyp/mauve.nvim",
+  "Yahddyyp/mauve.nvim",
   lazy = false,
   priority = 1000,
-  config = function()
-    require("mauve-nvim").setup()
-  end,
 }
 ```
 
@@ -25,17 +22,14 @@ Install with your favorite plugin manager:
 
 ```lua
 use {
-  "yahddyyp/mauve.nvim",
-  config = function()
-    require("mauve-nvim").setup()
-  end,
+  "Yahddyyp/mauve.nvim",
 }
 ```
 
 [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'yahddyyp/mauve.nvim'
+Plug 'Yahddyyp/mauve.nvim'
 ```
 
 ## Usage
@@ -51,7 +45,7 @@ This will apply the colorscheme every time you start Neovim.
 ## Supported Plugins
 
 *   [Telescope](https://github.com/nvim-telescope/telescope.nvim)
-*   [BlinkCmp](https://github.com/uga-rosa/blink.nvim)
+* [Blink.cmp](https://github.com/Saghen/blink.cmp)
 *   [Fidget](https://github.com/j-hui/fidget.nvim)
 *   [Snacks](https://github.com/sontungexpt/snacks.nvim)
 *   [Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
