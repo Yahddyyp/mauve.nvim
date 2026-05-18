@@ -32,11 +32,12 @@ local integrations = {
 	"treesitter",
 	"noice",
 	"git",
+	"grug_far",
 }
 
 local function apply()
 	local highlights = {
-		Normal = { fg = colours.fg, bg = colours.bg },
+		Normal = { fg = colours.fg, bg = colours.sapphire },
 		Comment = { fg = colours.subtext, italic = true },
 		Keyword = { fg = colours.mauve },
 		String = { fg = colours.green },
@@ -59,10 +60,10 @@ local function apply()
 		DiagnosticUnderlineWarn = { undercurl = true, sp = colours.peach },
 		DiagnosticUnderlineInfo = { undercurl = true, sp = colours.blue },
 		DiagnosticUnderlineHint = { undercurl = true, sp = colours.teal },
-		DiagnosticVirtualTextError = { fg = colours.red, bg = colours.mantle },
-		DiagnosticVirtualTextWarn = { fg = colours.peach, bg = colours.mantle },
-		DiagnosticVirtualTextInfo = { fg = colours.blue, bg = colours.mantle },
-		DiagnosticVirtualTextHint = { fg = colours.teal, bg = colours.mantle },
+		DiagnosticVirtualTextError = { fg = colours.red, bg = "#3d2030", italic = true },
+		DiagnosticVirtualTextWarn = { fg = colours.peach, bg = "#3d2e1e", italic = true },
+		DiagnosticVirtualTextInfo = { fg = colours.blue, bg = "#1e2d3d", italic = true },
+		DiagnosticVirtualTextHint = { fg = colours.teal, bg = "#1e3d38", italic = true },
 		FloatBorder = { fg = colours.mauve },
 		MatchParen = { fg = colours.sapphire, bold = true },
 		Identifier = { fg = colours.peach },
