@@ -37,7 +37,7 @@ local integrations = {
 
 local function apply()
 	local highlights = {
-		Normal = { fg = colours.fg, bg = colours.sapphire },
+		Normal = { fg = colours.fg, bg = colours.bg },
 		Comment = { fg = colours.subtext, italic = true },
 		Keyword = { fg = colours.mauve },
 		String = { fg = colours.green },
