@@ -47,7 +47,7 @@ This will apply the colorscheme every time you start Neovim.
 *   [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 *   [Blink.cmp](https://github.com/Saghen/blink.cmp)
 *   [Fidget](https://github.com/j-hui/fidget.nvim)
-*   [Snacks](https://github.com/sontungexpt/snacks.nvim)
+*   Most [Snacks](https://github.com/sontungexpt/snacks.nvim) plugins
 *   [Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
 *   [Noice.nvim](https://github.com/folke/noice.nvim)
 *   [Git Signs](https://github.com/lewis6991/gitsigns.nvim)
