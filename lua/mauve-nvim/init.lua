@@ -33,6 +33,7 @@ local integrations = {
 	"noice",
 	"git",
 	"grug_far",
+	"snacks-picker",
 }
 
 local function apply()
