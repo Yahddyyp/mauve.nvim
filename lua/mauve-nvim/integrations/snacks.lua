@@ -1,17 +1,22 @@
 return function(colours)
-	vim.api.nvim_set_hl(0, "SnacksNotifierInfo", { fg = colours.fg, bg = colours.mantle })
-	vim.api.nvim_set_hl(0, "SnacksNotifierWarn", { fg = colours.fg, bg = colours.mantle })
-	vim.api.nvim_set_hl(0, "SnacksNotifierError", { fg = colours.fg, bg = colours.mantle })
-	vim.api.nvim_set_hl(0, "SnacksNotifierBorderInfo", { fg = colours.mauve, bg = colours.mantle })
-	vim.api.nvim_set_hl(0, "SnacksNotifierBorderWarn", { fg = colours.peach, bg = colours.mantle })
-	vim.api.nvim_set_hl(0, "SnacksNotifierBorderError", { fg = colours.red, bg = colours.mantle })
-	vim.api.nvim_set_hl(0, "SnacksNotifierIconInfo", { fg = colours.mauve })
-	vim.api.nvim_set_hl(0, "SnacksNotifierIconWarn", { fg = colours.peach })
-	vim.api.nvim_set_hl(0, "SnacksNotifierIconError", { fg = colours.red })
-	vim.api.nvim_set_hl(0, "SnacksNotifierTitleInfo", { fg = colours.mauve, bold = true })
-	vim.api.nvim_set_hl(0, "SnacksNotifierTitleWarn", { fg = colours.peach, bold = true })
-	vim.api.nvim_set_hl(0, "SnacksNotifierTitleError", { fg = colours.red, bold = true })
-	vim.api.nvim_set_hl(0, "SnacksNotifierMsgInfo", { fg = colours.fg })
-	vim.api.nvim_set_hl(0, "SnacksNotifierMsgWarn", { fg = colours.fg })
-	vim.api.nvim_set_hl(0, "SnacksNotifierMsgError", { fg = colours.fg })
+	local highlights = {
+		SnacksNotifierInfo = { fg = colours.fg, bg = colours.mantle },
+		SnacksNotifierWarn = { fg = colours.fg, bg = colours.mantle },
+		SnacksNotifierError = { fg = colours.fg, bg = colours.mantle },
+		SnacksNotifierBorderInfo = { fg = colours.mauve, bg = colours.mantle },
+		SnacksNotifierBorderWarn = { fg = colours.peach, bg = colours.mantle },
+		SnacksNotifierBorderError = { fg = colours.red, bg = colours.mantle },
+		SnacksNotifierIconInfo = { fg = colours.mauve },
+		SnacksNotifierIconWarn = { fg = colours.peach },
+		SnacksNotifierIconError = { fg = colours.red },
+		SnacksNotifierTitleInfo = { fg = colours.mauve, bold = true },
+		SnacksNotifierTitleWarn = { fg = colours.peach, bold = true },
+		SnacksNotifierTitleError = { fg = colours.red, bold = true },
+		SnacksNotifierMsgInfo = { fg = colours.fg },
+		SnacksNotifierMsgWarn = { fg = colours.fg },
+		SnacksNotifierMsgError = { fg = colours.fg },
+	}
+	for group, opts in pairs(highlights) do
+		vim.api.nvim_set_hl(0, group, opts)
+	end
 end

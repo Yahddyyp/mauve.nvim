@@ -1,43 +1,48 @@
 return function(colours)
-	vim.api.nvim_set_hl(0, "@variable", { fg = colours.sapphire })
-	vim.api.nvim_set_hl(0, "@Keyword", { fg = colours.mauve })
-	vim.api.nvim_set_hl(0, "@constant", { fg = colours.mauve })
-	vim.api.nvim_set_hl(0, "@lsp.type.enumMember", { fg = colours.sapphire })
-	vim.api.nvim_set_hl(0, "@method.call", { fg = colours.blue })
-	vim.api.nvim_set_hl(0, "@function", { fg = colours.sapphire })
-	vim.api.nvim_set_hl(0, "@function.call", { fg = colours.sapphire })
-	vim.api.nvim_set_hl(0, "@function.macro", { fg = colours.mauve })
-	vim.api.nvim_set_hl(0, "@type", { fg = colours.green })
-	vim.api.nvim_set_hl(0, "@type.builtin", { fg = colours.mauve })
-	vim.api.nvim_set_hl(0, "@parameter", { fg = colours.subtext })
-	vim.api.nvim_set_hl(0, "@attribute", { fg = colours.subtext })
-	vim.api.nvim_set_hl(0, "@property", { fg = colours.blue })
-	vim.api.nvim_set_hl(0, "@boolean", { fg = colours.yellow })
-	vim.api.nvim_set_hl(0, "@operator", { fg = colours.blue })
-	vim.api.nvim_set_hl(0, "@module", { fg = colours.yellow })
-	vim.api.nvim_set_hl(0, "@include", { fg = colours.mauve })
-	vim.api.nvim_set_hl(0, "@label", { fg = colours.red })
-	vim.api.nvim_set_hl(0, "@character", { fg = colours.yellow })
-	vim.api.nvim_set_hl(0, "@float", { fg = colours.sapphire })
-	vim.api.nvim_set_hl(0, "@string.special", { fg = colours.red })
-	vim.api.nvim_set_hl(0, "@punctuation.delimiter", { fg = colours.subtext })
-	vim.api.nvim_set_hl(0, "@punctuation.bracket", { fg = colours.subtext })
-	vim.api.nvim_set_hl(0, "@markup.heading", { fg = colours.mauve, bold = true })
-	vim.api.nvim_set_hl(0, "@markup.strong", { fg = colours.fg, bold = true })
-	vim.api.nvim_set_hl(0, "@markup.italic", { fg = colours.fg, italic = true })
-	vim.api.nvim_set_hl(0, "@markup.link", { fg = colours.blue })
-	vim.api.nvim_set_hl(0, "@markup.list", { fg = colours.mauve })
-	vim.api.nvim_set_hl(0, "@markup.code", { fg = colours.green })
-	vim.api.nvim_set_hl(0, "@markup.quote", { fg = colours.subtext })
-	vim.api.nvim_set_hl(0, "Conditional", { fg = colours.mauve })
-	vim.api.nvim_set_hl(0, "Repeat", { fg = colours.mauve })
-	vim.api.nvim_set_hl(0, "Function", { fg = colours.sapphire })
-	vim.api.nvim_set_hl(0, "Bold", { fg = colours.fg, bold = true })
-	-- Markdown headings
-	vim.api.nvim_set_hl(0, "@markup.heading.1", { fg = colours.mauve, bold = true })
-	vim.api.nvim_set_hl(0, "@markup.heading.2", { fg = colours.peach, bold = true })
-	vim.api.nvim_set_hl(0, "@markup.heading.3", { fg = colours.yellow, bold = true })
-	vim.api.nvim_set_hl(0, "@markup.heading.4", { fg = colours.green, bold = true })
-	vim.api.nvim_set_hl(0, "@markup.heading.5", { fg = colours.red, bold = true })
-	vim.api.nvim_set_hl(0, "@markup.heading.6", { fg = colours.subtext, bold = true })
+	local highlights = {
+		["@variable"] = { fg = colours.sapphire },
+		["@Keyword"] = { fg = colours.mauve },
+		["@constant"] = { fg = colours.mauve },
+		["@lsp.type.enumMember"] = { fg = colours.sapphire },
+		["@method.call"] = { fg = colours.blue },
+		["@function"] = { fg = colours.sapphire },
+		["@function.call"] = { fg = colours.sapphire },
+		["@function.macro"] = { fg = colours.mauve },
+		["@type"] = { fg = colours.green },
+		["@type.builtin"] = { fg = colours.mauve },
+		["@parameter"] = { fg = colours.subtext },
+		["@attribute"] = { fg = colours.subtext },
+		["@property"] = { fg = colours.blue },
+		["@boolean"] = { fg = colours.yellow },
+		["@operator"] = { fg = colours.blue },
+		["@module"] = { fg = colours.yellow },
+		["@include"] = { fg = colours.mauve },
+		["@label"] = { fg = colours.red },
+		["@character"] = { fg = colours.yellow },
+		["@float"] = { fg = colours.sapphire },
+		["@string.special"] = { fg = colours.red },
+		["@punctuation.delimiter"] = { fg = colours.subtext },
+		["@punctuation.bracket"] = { fg = colours.subtext },
+		["@markup.heading"] = { fg = colours.mauve, bold = true },
+		["@markup.strong"] = { fg = colours.fg, bold = true },
+		["@markup.italic"] = { fg = colours.fg, italic = true },
+		["@markup.link"] = { fg = colours.blue },
+		["@markup.list"] = { fg = colours.mauve },
+		["@markup.code"] = { fg = colours.green },
+		["@markup.quote"] = { fg = colours.subtext },
+		Conditional = { fg = colours.mauve },
+		Repeat = { fg = colours.mauve },
+		Function = { fg = colours.sapphire },
+		Bold = { fg = colours.fg, bold = true },
+		-- Markdown headings
+		["@markup.heading.1"] = { fg = colours.mauve, bold = true },
+		["@markup.heading.2"] = { fg = colours.peach, bold = true },
+		["@markup.heading.3"] = { fg = colours.yellow, bold = true },
+		["@markup.heading.4"] = { fg = colours.green, bold = true },
+		["@markup.heading.5"] = { fg = colours.red, bold = true },
+		["@markup.heading.6"] = { fg = colours.subtext, bold = true },
+	}
+	for group, opts in pairs(highlights) do
+		vim.api.nvim_set_hl(0, group, opts)
+	end
 end
