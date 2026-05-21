@@ -76,7 +76,7 @@ local function apply()
 		vim.api.nvim_set_hl(0, group, opts)
 	end
 	for _, name in ipairs(integrations) do
-		local ok, mod = pcall(require, "mauve-nvim.integrations." .. name)
+		local ok, mod = pcall(require, "mauve.integrations." .. name)
 		if ok then
 			mod(colours)
 		end
