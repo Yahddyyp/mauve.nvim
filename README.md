@@ -62,7 +62,7 @@ Add this to your lualine config as i cant figure out how to get lualine to switc
 require('lualine').setup {
   options = {
     -- ... your other lualine options
-    theme = require('mauve-nvim.integrations.lualine')
+    theme = require('mauve.integrations.lualine')
   }
 }
 ```
