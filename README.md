@@ -34,6 +34,12 @@ Plug 'Yahddyyp/mauve.nvim'
 
 ## Usage
 
+To use `mauve`, enter the following into your vim cmdline:
+
+``` vim cmdline
+:colorscheme mauve
+```
+
 To make `mauve` your default colorscheme, add the following line to your `init.lua` after you have set up the plugin:
 
 ```lua
