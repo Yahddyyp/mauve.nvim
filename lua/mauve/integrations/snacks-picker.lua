@@ -5,7 +5,7 @@ return function(c)
 		SnacksPickerTitle = { fg = c.sapphire },
 		SnacksPickerInput = { bg = c.mantle, fg = c.fg },
 		SnacksPickerInputBorder = { bg = c.mantle, fg = c.mauve },
-		SnacksPickerInputTitle = { fg = c.sapphire },
+		SnacksPickerInputTitle = { fg = c.sapphire, bg = c.mantle },
 		SnacksPickerList = { bg = c.mantle, fg = c.fg },
 		SnacksPickerListBorder = { bg = c.mantle, fg = c.mauve },
 		SnacksPickerListTitle = { fg = c.sapphire },
