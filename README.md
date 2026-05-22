@@ -48,6 +48,9 @@ vim.cmd("colorscheme mauve")
 
 This will apply the colorscheme every time you start Neovim.
 
+### Transparency
+Use the [transparent.nvim](https://github.com/xiyaowong/transparent.nvim) plugin to make it properly work with transparency.
+
 ## Supported Plugins
 
 *   [Telescope](https://github.com/nvim-telescope/telescope.nvim)
@@ -57,7 +60,7 @@ This will apply the colorscheme every time you start Neovim.
 *   Some [Snacks](https://github.com/folke/snacks.nvim) plugins
 *   [Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
 *   [Noice.nvim](https://github.com/folke/noice.nvim)
-*   [Git Signs](https://github.com/lewis6991/gitsigns.nvim)
+*   [GitSigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 *   [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 *   [Grug-Far](https://github.com/MagicDuck/grug-far.nvim)
 
