@@ -8,9 +8,10 @@ return function(colours)
 		NoiceCmdlineIcon = { fg = colours.mauve },
 		NoiceCmdlineIconSearch = { fg = colours.mauve },
 		NoiceCmdlinePopupBorderSearch = { fg = colours.mauve },
+		NoiceCmdline = { bg = "NONE" },
+		NoiceCmdlinePopup = { bg = "NONE" },
 	}
 	for group, opts in pairs(highlights) do
 		vim.api.nvim_set_hl(0, group, opts)
 	end
 end
-
