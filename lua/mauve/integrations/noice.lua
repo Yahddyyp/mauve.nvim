@@ -1,19 +1,20 @@
 return function(colours)
-	local highlights = {
-		NoiceLspProgressClient = { fg = colours.mauve, bold = true },
-		NoiceLspProgressSpinner = { fg = colours.blue },
-		NoiceLspProgressTitle = { fg = colours.subtext },
-		NoiceFormatProgressDone = { fg = colours.bg, bg = colours.mauve },
-		NoiceFormatProgressTodo = { fg = colours.overlay0, bg = colours.surface0 },
-		NoiceCmdlineIcon = { fg = colours.mauve },
-		NoiceCmdlineIconSearch = { fg = colours.mauve },
-		NoiceCmdlinePopupBorderSearch = { fg = colours.mauve },
+    local highlights = {
+        NoiceLspProgressClient = { fg = colours.mauve, bold = true },
+        NoiceLspProgressSpinner = { fg = colours.blue },
+        NoiceLspProgressTitle = { fg = colours.subtext },
+        NoiceFormatProgressDone = { fg = colours.bg, bg = colours.mauve },
+        NoiceFormatProgressTodo = { fg = colours.overlay0, bg = colours.surface0 },
+        NoiceCmdlineIcon = { fg = colours.mauve },
+        NoiceCmdlineIconSearch = { fg = colours.mauve },
+        NoiceCmdlinePopupBorderSearch = { fg = colours.mauve },
 		NoiceCmdline = { bg = "NONE" },
 		NoiceCmdlinePopup = { bg = "NONE" },
 		NoicePopup = { bg = colours.mantle },
 		NoicePopupBorder = { fg = colours.mauve },
-	}
-	for group, opts in pairs(highlights) do
-		vim.api.nvim_set_hl(0, group, opts)
-	end
+		NoiceCmdlineBorder = { fg = colours.subtext },
+    }
+    for group, opts in pairs(highlights) do
+        vim.api.nvim_set_hl(0, group, opts)
+    end
 end
