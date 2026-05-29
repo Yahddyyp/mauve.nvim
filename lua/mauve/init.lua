@@ -14,6 +14,7 @@ local integrations = {
     "git",
     "grug_far",
     "snacks-picker",
+    "man",
 }
 
 local function apply()
@@ -51,6 +52,10 @@ local function apply()
         Special = { fg = colours.mauve },
         Type = { fg = colours.sapphire },
         envField = { fg = colours.yellow },
+        Title = { fg = colours.mauve, bold = true },
+        Statement = { fg = colours.peach, bold = true },
+		manBold = { fg = colours.sapphire, bold = true },
+		manOptionDesc = { fg = colours.green },
     }
     for group, opts in pairs(highlights) do
         vim.api.nvim_set_hl(0, group, opts)
