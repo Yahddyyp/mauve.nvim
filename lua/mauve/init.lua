@@ -52,10 +52,7 @@ local function apply()
         Special = { fg = colours.mauve },
         Type = { fg = colours.sapphire },
         envField = { fg = colours.yellow },
-        Title = { fg = colours.mauve, bold = true },
-        Statement = { fg = colours.peach, bold = true },
-		manBold = { fg = colours.sapphire, bold = true },
-		manOptionDesc = { fg = colours.green },
+        title = { fg = colours.mauve, bold = true },
     }
     for group, opts in pairs(highlights) do
         vim.api.nvim_set_hl(0, group, opts)
