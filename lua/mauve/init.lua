@@ -24,7 +24,7 @@ local function apply()
 		Keyword = { fg = colours.mauve },
 		String = { fg = colours.green },
 		Number = { fg = colours.yellow },
-		LineNr = { fg = colours.grey },
+		LineNr = { fg = colours.surface1 },
 		CursorLineNr = { fg = colours.mauve, bold = true },
 		StatusLine = { fg = colours.fg, bg = colours.bg, bold = true },
 		Visual = { bg = colours.grey, bold = true },
