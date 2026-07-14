@@ -1,7 +1,7 @@
 return function(c)
 	local highlights = {
-		WinSeparator = { fg = c.grey },
-		NormalFloat = { fg = c.sapphire },
+		WinSeparator = { fg = c.surface0 },
+		NormalFloat = { fg = c.fg },
 		FloatBorder = { fg = c.mauve },
 		NoiceCmdline = { fg = c.fg, bg = c.bg },
 		NoiceCmdlineIcon = { fg = c.sapphire },
