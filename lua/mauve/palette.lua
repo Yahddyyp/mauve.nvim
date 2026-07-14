@@ -17,5 +17,6 @@ return {
 	teal = "#94e2d5",
 	flamingo = "#f2cdcd",
 	surface0 = "#313244",
+	surface1 = "#45475a",
 	mantle = "#181825",
 }
