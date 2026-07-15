@@ -15,6 +15,9 @@ return function(colours)
 		SnacksNotifierMsgInfo = { fg = colours.fg },
 		SnacksNotifierMsgWarn = { fg = colours.fg },
 		SnacksNotifierMsgError = { fg = colours.fg },
+		-- indent lines
+		SnacksIndent = { fg = colours.surface0 },
+		SnacksIndentScope = { fg = colours.mauve },
 	}
 	for group, opts in pairs(highlights) do
 		vim.api.nvim_set_hl(0, group, opts)
