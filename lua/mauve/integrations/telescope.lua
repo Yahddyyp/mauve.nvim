@@ -4,7 +4,7 @@ return function(c)
 		TelescopePromptBorder = { fg = c.mauve },
 		TelescopeResultsBorder = { fg = c.mauve },
 		TelescopePreviewBorder = { fg = c.mauve },
-		TelescopeSelection = { fg = c.mauve, bold = true, bg = c.grey },
+		TelescopeSelection = { fg = c.mauve, bold = true, bg = c.surface1 },
 		TelescopePromptPrefix = { fg = c.sapphire, bold = true },
 	}
 	for group, opts in pairs(highlights) do

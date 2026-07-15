@@ -27,7 +27,7 @@ local function apply()
 		LineNr = { fg = colours.surface1 },
 		CursorLineNr = { fg = colours.mauve, bold = true },
 		StatusLine = { fg = colours.fg, bg = colours.bg, bold = true },
-		Visual = { bg = colours.grey, bold = true },
+		Visual = { bg = colours.surface1, bold = true },
 		-- Search
 		Terminal = { fg = colours.fg },
 		Search = { fg = colours.bg, bg = colours.mauve },
