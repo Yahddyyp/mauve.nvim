@@ -63,6 +63,7 @@ Use the [transparent.nvim](https://github.com/xiyaowong/transparent.nvim) plugin
 *   [GitSigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 *   [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 *   [Grug-Far](https://github.com/MagicDuck/grug-far.nvim)
+*   [Render-Markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 
 ## Lualine
 

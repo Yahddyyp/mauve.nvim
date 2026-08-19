@@ -15,6 +15,7 @@ local integrations = {
 	"grug_far",
 	"snacks-picker",
 	"man",
+	"render-markdown",
 }
 
 local function apply()
