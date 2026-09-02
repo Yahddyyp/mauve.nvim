@@ -13,6 +13,8 @@ return function(colours)
 		NoicePopup = { bg = colours.mantle },
 		NoicePopupBorder = { fg = colours.mauve },
 		NoiceCmdlineBorder = { fg = colours.subtext },
+		NoiceCmdlinePopupBorderCmdline = { fg = colours.mauve },
+		NoiceCmdlineIconCmdline = { fg = colours.sapphire }
 	}
 	for group, opts in pairs(highlights) do
 		vim.api.nvim_set_hl(0, group, opts)
