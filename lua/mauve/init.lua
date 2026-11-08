@@ -1,6 +1,6 @@
 local M = {}
 
-local colours = require("mauve.palette")
+local c = require("mauve.palette")
 
 local integrations = {
 	"telescope",
@@ -20,40 +20,40 @@ local integrations = {
 
 local function apply()
 	local highlights = {
-		Normal = { fg = colours.fg, bg = colours.bg },
-		Comment = { fg = colours.subtext, italic = true },
-		Keyword = { fg = colours.mauve },
-		String = { fg = colours.green },
-		Number = { fg = colours.yellow },
-		LineNr = { fg = colours.surface1 },
-		CursorLineNr = { fg = colours.mauve, bold = true },
-		StatusLine = { fg = colours.fg, bg = colours.bg, bold = true },
-		Visual = { bg = colours.surface1, bold = true },
+		Normal = { fg = c.fg, bg = c.bg },
+		Comment = { fg = c.subtext, italic = true },
+		Keyword = { fg = c.mauve },
+		String = { fg = c.green },
+		Number = { fg = c.yellow },
+		LineNr = { fg = c.surface1 },
+		CursorLineNr = { fg = c.mauve, bold = true },
+		StatusLine = { fg = c.fg, bg = c.bg, bold = true },
+		Visual = { bg = c.surface1, bold = true },
 		-- Search
-		Terminal = { fg = colours.fg },
-		Search = { fg = colours.bg, bg = colours.mauve },
-		IncSearch = { fg = colours.bg, bg = colours.mauve },
-		CurSearch = { fg = colours.bg, bg = colours.sapphire, bold = true },
+		Terminal = { fg = c.fg },
+		Search = { fg = c.bg, bg = c.flamingo },
+		IncSearch = { fg = c.bg, bg = c.blue },
+		CurSearch = { fg = c.bg, bg = c.red, bold = true },
 		-- LSP diagnostics
-		DiagnosticError = { fg = colours.red },
-		DiagnosticWarn = { fg = colours.peach },
-		DiagnosticInfo = { fg = colours.blue },
-		DiagnosticHint = { fg = colours.teal },
-		DiagnosticUnderlineError = { undercurl = true, sp = colours.red },
-		DiagnosticUnderlineWarn = { undercurl = true, sp = colours.peach },
-		DiagnosticUnderlineInfo = { undercurl = true, sp = colours.blue },
-		DiagnosticUnderlineHint = { undercurl = true, sp = colours.teal },
-		DiagnosticVirtualTextError = { fg = colours.red, bg = "#3d2030", italic = true },
-		DiagnosticVirtualTextWarn = { fg = colours.peach, bg = "#3d2e1e", italic = true },
-		DiagnosticVirtualTextInfo = { fg = colours.blue, bg = "#1e2d3d", italic = true },
-		DiagnosticVirtualTextHint = { fg = colours.teal, bg = "#1e3d38", italic = true },
-		FloatBorder = { fg = colours.mauve },
-		MatchParen = { fg = colours.sapphire, bold = true },
-		Identifier = { fg = colours.peach },
-		Special = { fg = colours.mauve },
-		Type = { fg = colours.sapphire },
-		envField = { fg = colours.yellow },
-		title = { fg = colours.mauve, bold = true },
+		DiagnosticError = { fg = c.red },
+		DiagnosticWarn = { fg = c.peach },
+		DiagnosticInfo = { fg = c.blue },
+		DiagnosticHint = { fg = c.teal },
+		DiagnosticUnderlineError = { undercurl = true, sp = c.red },
+		DiagnosticUnderlineWarn = { undercurl = true, sp = c.peach },
+		DiagnosticUnderlineInfo = { undercurl = true, sp = c.blue },
+		DiagnosticUnderlineHint = { undercurl = true, sp = c.teal },
+		DiagnosticVirtualTextError = { fg = c.red, bg = "#3d2030", italic = true },
+		DiagnosticVirtualTextWarn = { fg = c.peach, bg = "#3d2e1e", italic = true },
+		DiagnosticVirtualTextInfo = { fg = c.blue, bg = "#1e2d3d", italic = true },
+		DiagnosticVirtualTextHint = { fg = c.teal, bg = "#1e3d38", italic = true },
+		FloatBorder = { fg = c.mauve },
+		MatchParen = { fg = c.sapphire, bold = true },
+		Identifier = { fg = c.peach },
+		Special = { fg = c.mauve },
+		Type = { fg = c.sapphire },
+		envField = { fg = c.yellow },
+		title = { fg = c.mauve, bold = true },
 	}
 	for group, opts in pairs(highlights) do
 		vim.api.nvim_set_hl(0, group, opts)
@@ -61,7 +61,7 @@ local function apply()
 	for _, name in ipairs(integrations) do
 		local ok, mod = pcall(require, "mauve.integrations." .. name)
 		if ok then
-			mod(colours)
+			mod(c)
 		end
 	end
 end

@@ -1,21 +1,19 @@
-return function(colours)
-	local C = colours
-
+return function(c)
 	local groups = {
-		RenderMarkdownCode = { bg = C.mantle },
-		RenderMarkdownCodeInline = { fg = C.mauve, bg = "NONE" },
-		RenderMarkdownBullet = { fg = C.mauve },
-		RenderMarkdownTableHead = { fg = C.blue },
-		RenderMarkdownTableRow = { fg = C.lavender },
-		RenderMarkdownSuccess = { fg = C.green },
-		RenderMarkdownInfo = { fg = C.sapphire },
-		RenderMarkdownHint = { fg = C.teal },
-		RenderMarkdownWarn = { fg = C.yellow },
-		RenderMarkdownError = { fg = C.red },
-		RenderMarkdownUnchecked = { fg = colours.overlay1 },
+		RenderMarkdownCode = { bg = c.mantle },
+		RenderMarkdownCodeInline = { fg = c.mauve, bg = "NONE" },
+		RenderMarkdownBullet = { fg = c.mauve },
+		RenderMarkdownTableHead = { fg = c.blue },
+		RenderMarkdownTableRow = { fg = c.lavender },
+		RenderMarkdownSuccess = { fg = c.green },
+		RenderMarkdownInfo = { fg = c.sapphire },
+		RenderMarkdownHint = { fg = c.teal },
+		RenderMarkdownWarn = { fg = c.yellow },
+		RenderMarkdownError = { fg = c.red },
+		RenderMarkdownUnchecked = { fg = c.overlay1 },
 	}
 
-	local heading_colors = { C.mauve, C.peach, C.yellow, C.green, C.red, C.subtext }
+	local heading_colors = { c.mauve, c.peach, c.yellow, c.green, c.red, c.subtext }
 
 	local function darken(hex, percentage, base)
 		local function to_rgb(h)
@@ -34,7 +32,7 @@ return function(colours)
 	for i = 1, 6 do
 		local color = heading_colors[i]
 		groups["RenderMarkdownH" .. i] = { fg = color }
-		groups["RenderMarkdownH" .. i .. "Bg"] = { bg = darken(color, darkening_percentage, C.bg) }
+		groups["RenderMarkdownH" .. i .. "Bg"] = { bg = darken(color, darkening_percentage, c.bg) }
 	end
 
 	for group, opts in pairs(groups) do

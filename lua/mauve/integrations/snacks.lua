@@ -1,23 +1,23 @@
-return function(colours)
+return function(c)
 	local highlights = {
-		SnacksNotifierInfo = { fg = colours.fg, bg = colours.base },
-		SnacksNotifierWarn = { fg = colours.fg, bg = colours.base },
-		SnacksNotifierError = { fg = colours.fg, bg = colours.base },
-		SnacksNotifierBorderInfo = { fg = colours.mauve, bg = "NONE" },
-		SnacksNotifierBorderWarn = { fg = colours.peach, bg = "NONE" },
-		SnacksNotifierBorderError = { fg = colours.red, bg = "NONE" },
-		SnacksNotifierIconInfo = { fg = colours.mauve, bg = colours.base },
-		SnacksNotifierIconWarn = { fg = colours.peach, bg = colours.base },
-		SnacksNotifierIconError = { fg = colours.red, bg = colours.base },
-		SnacksNotifierTitleInfo = { fg = colours.mauve, bg = colours.base },
-		SnacksNotifierTitleWarn = { fg = colours.peach, bg = colours.base },
-		SnacksNotifierTitleError = { fg = colours.red, bg = colours.base },
-		SnacksNotifierMsgInfo = { fg = colours.fg },
-		SnacksNotifierMsgWarn = { fg = colours.fg },
-		SnacksNotifierMsgError = { fg = colours.fg },
+		SnacksNotifierInfo = { fg = c.fg, bg = c.base },
+		SnacksNotifierWarn = { fg = c.fg, bg = c.base },
+		SnacksNotifierError = { fg = c.fg, bg = c.base },
+		SnacksNotifierBorderInfo = { fg = c.mauve, bg = "NONE" },
+		SnacksNotifierBorderWarn = { fg = c.peach, bg = "NONE" },
+		SnacksNotifierBorderError = { fg = c.red, bg = "NONE" },
+		SnacksNotifierIconInfo = { fg = c.mauve, bg = c.base },
+		SnacksNotifierIconWarn = { fg = c.peach, bg = c.base },
+		SnacksNotifierIconError = { fg = c.red, bg = c.base },
+		SnacksNotifierTitleInfo = { fg = c.mauve, bg = c.base },
+		SnacksNotifierTitleWarn = { fg = c.peach, bg = c.base },
+		SnacksNotifierTitleError = { fg = c.red, bg = c.base },
+		SnacksNotifierMsgInfo = { fg = c.fg },
+		SnacksNotifierMsgWarn = { fg = c.fg },
+		SnacksNotifierMsgError = { fg = c.fg },
 		-- indent lines
-		SnacksIndent = { fg = colours.surface0 },
-		SnacksIndentScope = { fg = colours.mauve },
+		SnacksIndent = { fg = c.surface0 },
+		SnacksIndentScope = { fg = c.mauve },
 	}
 	for group, opts in pairs(highlights) do
 		vim.api.nvim_set_hl(0, group, opts)

@@ -1,20 +1,20 @@
-return function(colours)
+return function(c)
 	local highlights = {
-		DiffAdd = { fg = colours.green },
-		DiffChange = { fg = colours.sapphire },
-		DiffDelete = { fg = colours.red },
-		DiffText = { fg = colours.blue, bg = colours.surface0 },
-		GitSignsAdd = { fg = colours.green },
-		GitSignsChange = { fg = colours.sapphire },
-		GitSignsDelete = { fg = colours.red },
+		DiffAdd = { fg = c.green },
+		DiffChange = { fg = c.sapphire },
+		DiffDelete = { fg = c.red },
+		DiffText = { fg = c.blue, bg = c.surface0 },
+		GitSignsAdd = { fg = c.green },
+		GitSignsChange = { fg = c.sapphire },
+		GitSignsDelete = { fg = c.red },
 		-- For git commit message
-		gitcommitComment = { fg = colours.subtext, italic = true },
-		gitcommitBranch = { fg = colours.mauve },
-		gitcommitHeader = { fg = colours.mauve },
-		gitcommitFile = { fg = colours.peach },
-		diffAdded = { fg = colours.green },
-		diffChanged = { fg = colours.sapphire },
-		diffRemoved = { fg = colours.red },
+		gitcommitComment = { fg = c.subtext, italic = true },
+		gitcommitBranch = { fg = c.mauve },
+		gitcommitHeader = { fg = c.mauve },
+		gitcommitFile = { fg = c.peach },
+		diffAdded = { fg = c.green },
+		diffChanged = { fg = c.sapphire },
+		diffRemoved = { fg = c.red },
 	}
 	for group, opts in pairs(highlights) do
 		vim.api.nvim_set_hl(0, group, opts)
