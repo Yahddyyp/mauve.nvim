@@ -11,7 +11,7 @@ return function(c)
 		SnacksPickerInputBorder = { fg = c.mauve },
 		SnacksPickerInput = { fg = c.fg },
 		SnacksPickerPrompt = { fg = c.sapphire },
-		SnacksPickerMatch = { fg = c.blue },
+		SnacksPickerMatch = { fg = c.sky },
 
 		SnacksPickerSelected = {
 			fg = c.mauve,
@@ -28,7 +28,7 @@ return function(c)
 		SnacksPickerPreviewTitle = { fg = c.green },
 
 		SnacksPickerTitle = { fg = c.mauve },
-		SnacksPickerInputTitle = { fg = c.blue },
+		SnacksPickerInputTitle = { fg = c.sky },
 
 		SnacksPickerDir = { fg = c.overlay0 },
 		SnacksPickerRow = { fg = c.mauve },

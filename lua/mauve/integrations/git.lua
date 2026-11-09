@@ -3,7 +3,7 @@ return function(c)
 		DiffAdd = { fg = c.green },
 		DiffChange = { fg = c.sapphire },
 		DiffDelete = { fg = c.red },
-		DiffText = { fg = c.blue, bg = c.surface0 },
+		DiffText = { fg = c.sky, bg = c.surface0 },
 		GitSignsAdd = { fg = c.green },
 		GitSignsChange = { fg = c.sapphire },
 		GitSignsDelete = { fg = c.red },

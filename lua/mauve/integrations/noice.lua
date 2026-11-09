@@ -1,7 +1,7 @@
 return function(c)
 	local highlights = {
 		NoiceLspProgressClient = { fg = c.mauve, bold = true },
-		NoiceLspProgressSpinner = { fg = c.blue },
+		NoiceLspProgressSpinner = { fg = c.sky },
 		NoiceLspProgressTitle = { fg = c.subtext },
 		NoiceFormatProgressDone = { fg = c.bg, bg = c.mauve },
 		NoiceFormatProgressTodo = { fg = c.overlay0, bg = c.surface0 },

@@ -7,7 +7,7 @@ local c = {
 	green = "#a6e3a1",
 	red = "#f38ba8",
 	yellow = "#f9e2af",
-	blue = "#89dceb",
+	sky = "#89dceb",
 	peach = "#fab387",
 	lavender = "#b4befe",
 }

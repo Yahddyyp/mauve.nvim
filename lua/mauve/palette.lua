@@ -2,7 +2,7 @@ return {
 	bg = "#1e1e2e",
 	fg = "#cdd6f4",
 	subtext = "#a6adc8",
-	blue = "#89dceb",
+	sky = "#89dceb",
 	red = "#f38ba8",
 	green = "#a6e3a1",
 	yellow = "#f9e2af",

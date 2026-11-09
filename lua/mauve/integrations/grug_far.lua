@@ -13,7 +13,7 @@ return function(c)
 		GrugFarResultsAddedIndicator = { fg = c.green },
 		GrugFarResultsRemovedIndicator = { fg = c.red },
 		GrugFarResultsStatsHeader = { fg = c.subtext, italic = true },
-		GrugFarFilePath = { fg = c.blue, bold = true },
+		GrugFarFilePath = { fg = c.sky, bold = true },
 		GrugFarCount = { fg = c.peach, bold = true },
 		GrugFarSearchProgress = { fg = c.sapphire, italic = true },
 	}

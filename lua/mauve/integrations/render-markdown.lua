@@ -3,7 +3,7 @@ return function(c)
 		RenderMarkdownCode = { bg = c.mantle },
 		RenderMarkdownCodeInline = { fg = c.mauve, bg = "NONE" },
 		RenderMarkdownBullet = { fg = c.mauve },
-		RenderMarkdownTableHead = { fg = c.blue },
+		RenderMarkdownTableHead = { fg = c.sky },
 		RenderMarkdownTableRow = { fg = c.lavender },
 		RenderMarkdownSuccess = { fg = c.green },
 		RenderMarkdownInfo = { fg = c.sapphire },
